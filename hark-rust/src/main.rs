@@ -1,4 +1,4 @@
-fn main() {
+// fn main() {
     // 1. stack / heap
     // stack_fn();   // Call the function that uses stack memory
     // heap_fn();    // Call the function that uses heap memory
@@ -6,7 +6,7 @@ fn main() {
 
     
 
-}
+// }
 
 // stack / heap
 // fn stack_fn() {
@@ -35,4 +35,23 @@ fn main() {
 //     s.push_str(" and some additional text");
 //     println!("After update: {}", s);
 //     println!("length: {}, capacity: {}, pointer: {:p}", s.len(), s.capacity(), s.as_ptr());
+// }
+
+
+// structs
+// struct User {
+//     name: String,
+//     age: u32,
+//     email: String,
+// }
+
+
+// fn main() {
+//     let user1 = User {
+//         name: String::from("John"),
+//         age: 30,
+//         email: String::from("john@example.com"),
+//     };
+
+//     println!("{} is {} years old and can be contacted at {}", user1.name, user1.age, user1.email);
 // }
