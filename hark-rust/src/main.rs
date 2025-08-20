@@ -55,3 +55,46 @@
 
 //     println!("{} is {} years old and can be contacted at {}", user1.name, user1.age, user1.email);
 // }
+
+
+//hashmaps 
+
+
+// use std::collections::HashMap;
+
+// fn main(){
+//     let mut users = HashMap::new();
+
+//     users.insert(String::from("hark"), 1);
+//     users.insert(String::from("hark-1"), 2);
+//     users.insert(String::from("hark-2"), 3);
+//     users.insert(String::from("hark-3"), 4);
+
+//     let first_user = users.get("hark");
+
+//     match first_user {
+//         Some(soem) => println!("user is {}", soem),
+//         None => println!("nothing found"),
+//     }
+// }
+
+//tuples
+
+use std::collections::HashMap;
+
+
+fn group_values_by_keys(vec: Vec<(String, i32)>) -> HashMap<String, i32>{
+
+    let mut hm = HashMap::new();
+    for (key, value) in vec{
+        hm.insert( key, value);
+    }
+    return hm;
+}
+fn main(){
+
+    let input_vec = vec![(String::from("hey"), 1),(String::from("hello"), 2)];
+    let hm = group_values_by_keys(input_vec);
+
+    println!("here is the hm {:?}", hm)
+}
