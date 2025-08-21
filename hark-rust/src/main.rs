@@ -119,4 +119,29 @@
     
 //     return &str[0..index];
 
-//
+
+//traits
+
+
+trait Summery {
+    fn summ(&self) -> String;
+}
+
+struct User{
+    name: String,
+    age: u32,
+}
+
+impl Summery for User {
+    fn summ(&self) -> String {
+        return format!("name {}, and this is the age {}", self.name, self.age)
+    }
+}
+fn main(){
+
+    let user = User{
+        name: String::from("me"),
+        age: 19,
+    };
+    println!("{}", user.summ())
+}
