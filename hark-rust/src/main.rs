@@ -1,8 +1,8 @@
 // fn main() {
-    // 1. stack / heap
-    // stack_fn();   // Call the function that uses stack memory
-    // heap_fn();    // Call the function that uses heap memory
-    // update_string();  // Call the function that changes size of variable at runtime
+//     1. stack / heap
+//     stack_fn();   // Call the function that uses stack memory
+//     heap_fn();    // Call the function that uses heap memory
+//     update_string();  // Call the function that changes size of variable at runtime
 
     
 
@@ -57,7 +57,7 @@
 // }
 
 
-//hashmaps 
+// hashmaps 
 
 
 // use std::collections::HashMap;
@@ -78,23 +78,45 @@
 //     }
 // }
 
-//tuples
+// tuples
 
-use std::collections::HashMap;
+// use std::collections::HashMap;
 
 
-fn group_values_by_keys(vec: Vec<(String, i32)>) -> HashMap<String, i32>{
+// fn group_values_by_keys(vec: Vec<(String, i32)>) -> HashMap<String, i32>{
 
-    let mut hm = HashMap::new();
-    for (key, value) in vec{
-        hm.insert( key, value);
-    }
-    return hm;
-}
-fn main(){
+//     let mut hm = HashMap::new();
+//     for (key, value) in vec{
+//         hm.insert( key, value);
+//     }
+//     return hm;
+// }
+// fn main(){
 
-    let input_vec = vec![(String::from("hey"), 1),(String::from("hello"), 2)];
-    let hm = group_values_by_keys(input_vec);
+//     let input_vec = vec![(String::from("hey"), 1),(String::from("hello"), 2)];
+//     let hm = group_values_by_keys(input_vec);
 
-    println!("here is the hm {:?}", hm)
-}
+//     println!("here is the hm {:?}", hm)
+// }
+
+
+
+// fn main(){
+//     let name = String::from("hello world");
+//     let slice = first_word_slice(&name);
+//     println!("slice: {}", slice)
+// }
+
+// fn first_word_slice(str: &String) -> &str {
+
+//     let mut index = 0;
+//     for i in str.chars(){
+//         if i == ' '{
+//             break;
+//         }
+//         index = index + 1;
+//     }
+    
+//     return &str[0..index];
+
+//
